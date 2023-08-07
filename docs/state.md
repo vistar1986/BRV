@@ -21,7 +21,10 @@
 
 <br>
 
-<img src="https://i.loli.net/2021/08/14/cliN9VtnAfjb1Z4.gif" width="250"/>
+<figure markdown>
+  ![](https://i.loli.net/2021/08/14/cliN9VtnAfjb1Z4.gif){ width="250" }
+  <a href="https://github.com/liangjingkanji/BRV/blob/5269ef2/sample/src/main/java/com/drake/brv/sample/ui/fragment/StateLayoutFragment.kt" target="_blank"><figcaption>示例代码</figcaption></a>
+</figure>
 
 
 ## 使用
@@ -56,7 +59,6 @@ StateConfig.apply {
 ```kotlin
 rv.linear().setup {
     addType<Model>(R.layout.item_simple)
-    addType<DoubleItemModel>(R.layout.item_full_span)
 }.models = getData()
 ```
 
@@ -70,7 +72,7 @@ state.showEmpty() // 加载失败
 
 ## StateLayout
 
-如果想要自定义StateLayout缺省页动画或监听生命周期可阅读以下文档
+自定义StateLayout缺省页动画或监听生命周期可阅读以下文档
 
 - [GitHub](https://github.com/liangjingkanji/StateLayout/)
 - [使用文档](https://liangjingkanji.github.io/StateLayout)

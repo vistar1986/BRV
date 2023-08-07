@@ -24,7 +24,7 @@
 <p align="center">
 <a href="https://jitpack.io/#liangjingkanji/BRV"><img src="https://jitpack.io/v/liangjingkanji/BRV.svg"/></a>
 <img src="https://img.shields.io/badge/language-kotlin-orange.svg"/>
-<img src="https://img.shields.io/badge/license-Apache-blue"/>
+<img src="https://img.shields.io/badge/license-MIT-blue"/>
 <a href="http://liangjingkanji.github.io/BRV/updates"><img src="https://img.shields.io/badge/changed-%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97-brightgreen"/></a>
 <a href="http://liangjingkanji.github.io/BRV/api"><img src="https://img.shields.io/badge/api-%E5%87%BD%E6%95%B0%E6%96%87%E6%A1%A3-red"/></a>
 <a href="https://raw.githubusercontent.com/liangjingkanji/liangjingkanji/master/img/group-qrcode.png"><img src="https://raw.githubusercontent.com/liangjingkanji/liangjingkanji/master/img/group.svg"/></a>
@@ -34,9 +34,8 @@
 
 <p align="center"><img src="https://github.com/liangjingkanji/BRV/blob/master/docs/img/preview.png?raw=true" align="center" width="30%;" /></p>
 
-本框架在不影响RecyclerView的任何函数组件使用基础上开发. 本项目承诺会永远保持社区维护
+BRV为快速构建RV列表工具, 以开源分享来完善, 将一直保持社区维护
 
-欢迎将本项目文档/注释进行国际化翻译, 感谢您的支持! <br>
 Welcome to international translation of this project's documents/notes, thank you for your support!
 
 <br>
