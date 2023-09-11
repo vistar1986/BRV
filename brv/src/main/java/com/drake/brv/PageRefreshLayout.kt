@@ -430,6 +430,7 @@ open class PageRefreshLayout : SmartRefreshLayout, OnRefreshLoadMoreListener {
                         (stateLayout.status == Status.ERROR && !refreshEnableWhenError) -> {
                     super.setEnableRefresh(false)
                 }
+
                 else -> super.setEnableRefresh(true)
             }
         }
@@ -459,6 +460,20 @@ open class PageRefreshLayout : SmartRefreshLayout, OnRefreshLoadMoreListener {
                 super.setEnableLoadMore(false)
             } else {
                 super.setEnableLoadMore(true)
+            }
+        }
+        return this
+    }
+
+    // 解决在Activity的onAttachedToWindow未调用时SmartRefreshLayout下拉刷新立即完成导致的循环调用堆栈溢出
+    private var currentNoMoreData: Boolean? = null
+    override fun setNoMoreData(noMoreData: Boolean): RefreshLayout {
+        if (mAttachedToWindow) {
+            super.setNoMoreData(noMoreData)
+        } else {
+            if (currentNoMoreData != noMoreData) {
+                currentNoMoreData = noMoreData
+                super.setNoMoreData(noMoreData)
             }
         }
         return this

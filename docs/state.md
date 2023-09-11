@@ -12,7 +12,7 @@
 - [x] 快速配置点击重试
 - [x] 监听缺省页回调
 - [x] 自定义动画/布局
-- [x] [骨骼动画](https://liangjingkanji.github.io/StateLayout/skeleton/)
+- [x] [骨骼动画](https://liangjingkanji.github.io/StateLayout/skeleton.html)
 - [x] 传递标签
 - [x] 异步线程使用
 - [x] 自定义缺省页切换处理
@@ -79,4 +79,4 @@ state.showEmpty() // 加载失败
 
 ## 骨骼动画
 
-骨骼动画实际上就是对应布局的动画或图片, BRV骨骼动画同样由StateLayout实现: [骨骼动画](https://liangjingkanji.github.io/StateLayout/skeleton/)
+骨骼动画实际上就是对应布局的动画或图片, BRV骨骼动画同样由StateLayout实现: [骨骼动画](https://liangjingkanji.github.io/StateLayout/skeleton.html)
