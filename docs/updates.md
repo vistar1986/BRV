@@ -1,3 +1,15 @@
+## 1.6.1
+- sample: 升级flexbox版本以解决demo无法编译
+- fix: #469 修改本地时间导致点击防抖动错误
+- fix: #461 修复拖拽交换禁止拖拽的item未触发onDrag函数
+- fix: 当models未被初始化时调用checkAll抛出NullPointException
+
+## 1.6.0
+- feat: 分割线函数divider新增参数stretch禁止拉伸
+- fix: #439 PageRefreshLayout在页面未创建完成立即finish，会导致下拉动画无法回弹以及刷新无效
+- fix: 修复展开分组当前item动画白屏
+- perf: #447 如果拖拽起始位置等于目标位置则属于无效移动, 不回调onDrag方法
+
 ## 1.5.8
 - feat: #412 支持全局点击防抖动
 
